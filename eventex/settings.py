@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'eventex.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-defalut_dburl = 'sqlite3:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+defalut_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = {
     'default': config('DATABASE_URL', default=defalut_dburl, cast=dburl)
 }
